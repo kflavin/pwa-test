@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PWA Test</title>
+  <meta name="theme-color" content="#2563eb">
+  <meta name="description" content="A minimal installable PWA for testing.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>PWA Test</h1>
+    <p>A minimal installable web app.</p>
+
+    <section class="card">
+      <h2>Status</h2>
+      <ul>
+        <li>Display mode: <strong id="mode">…</strong></li>
+        <li>Service worker: <strong id="sw">…</strong></li>
+        <li>Network: <strong id="net">…</strong></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Install</h2>
+      <button id="install" hidden>Install app</button>
+      <p id="install-help"></p>
+    </section>
+
+    <section class="card">
+      <h2>Counter</h2>
+      <p class="counter"><span id="count">0</span></p>
+      <button id="inc">Tap me</button>
+      <p class="hint">Saved locally — survives closing the app and works offline.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+:root { --accent: #2563eb; --bg: #f8fafc; --fg: #0f172a; --card: #fff; --muted: #64748b; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f172a; --fg: #e2e8f0; --card: #1e293b; --muted: #94a3b8; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg); color: var(--fg);
+  padding: env(safe-area-inset-top) 16px env(safe-area-inset-bottom);
+}
+main { max-width: 480px; margin: 0 auto; padding: 24px 0; }
+h1 { color: var(--accent); margin-bottom: 4px; }
+.card { background: var(--card); border-radius: 12px; padding: 16px; margin: 16px 0; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.card h2 { margin: 0 0 8px; font-size: 1.1rem; }
+ul { padding-left: 20px; margin: 0; line-height: 1.8; }
+button {
+  font: inherit; font-weight: 600; color: #fff; background: var(--accent);
+  border: 0; border-radius: 8px; padding: 12px 20px; width: 100%;
+}
+button:active { opacity: .8; }
+.counter { font-size: 3rem; font-weight: 700; text-align: center; margin: 8px 0; }
+.hint, #install-help { color: var(--muted); font-size: .9rem; }
